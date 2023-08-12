@@ -172,7 +172,7 @@ class Memory {
 	
 	public function resetMemory() {
 		$this->_buffer = '';
-		$this->_mem = '';
+		$this->_mem = [];
 		$this->_pos = 0;
 		$this->_readPos = 0;
 	}
