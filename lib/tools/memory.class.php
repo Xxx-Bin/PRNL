@@ -94,7 +94,7 @@ class Memory {
 	}
 
 	public function setByte($pos, $byte) {
-		$this->_buffer{$pos} = chr($byte & 0xFF);
+		$this->_buffer[$pos] = chr($byte & 0xFF);
 		$this->_mem[$pos] = $byte & 0xFF;
 	}
 	
