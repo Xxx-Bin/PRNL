@@ -141,7 +141,7 @@ class TCPProtocolPacket extends RawPacket implements ICompleteableProtocolPacket
 		$sum->add($this->getPacketLength());
 		
 		$sum->bitNot();
-		$this->_buffer->setShort(IUDP::CHECKSUM, $sum->getValue());
+		$this->_buffer->setShort(ITCP::CHECKSUM, $sum->getValue());
 	}
 	
 	public function completePacket(Memory $ipPacketBuffer) {
